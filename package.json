@@ -27,5 +27,15 @@
     "grunt-contrib-qunit": "^0.7.0",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-docco": "~0.2.0"
+  },
+  "wilton": {
+    "excludes": [
+        "demo",
+        "dist",
+        "docs",
+        "test",
+        "Gruntfile.js",
+        "index.html"
+    ]
   }
 }

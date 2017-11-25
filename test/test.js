@@ -1,3 +1,12 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+
+var test = require("tape-compat");
+var ok = require("assert")
+var equal = ok.equal;
+var deepEqual = ok.deepEqual;
+var module = test.QUnit.module;
+
+var tinycolor = require("tinycolor");
 
 test("TinyColor initialization", function() {
   ok(typeof tinycolor != "undefined", "tinycolor is initialized on the page");
@@ -789,3 +798,5 @@ test("tetrad", function() {
   var combination = tinycolor("red").tetrad();
   equal(colorsToHexString(combination), "ff0000,80ff00,00ffff,7f00ff", "Correct Combination");
 });
+
+return module.exports;});
