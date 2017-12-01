@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 
 var test = require("tape-compat");
 var ok = require("assert")
@@ -799,4 +799,4 @@ test("tetrad", function() {
   equal(colorsToHexString(combination), "ff0000,80ff00,00ffff,7f00ff", "Correct Combination");
 });
 
-return module.exports;});
+require = requireOrig;});
