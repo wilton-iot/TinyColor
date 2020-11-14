@@ -35,7 +35,8 @@
         "docs",
         "test",
         "Gruntfile.js",
-        "index.html"
+        "index.html",
+        "test.js"
     ]
   }
 }
